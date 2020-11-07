@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular IMC</title>
+</head>
+<body>
+
+
+    <div>
+        <h1>
+            Calculadora Gorjeta
+        </h1>
+    </div>
+
+    <div>
+        <form id="tipoForm">
+            <label for="bill">
+                <p>
+                    Quanto ficou a conta ?
+                </p>
+            </label>
+
+            <p>
+                <input type="number" name="bill" id="bill" required>
+            </p>
+
+            <label for="service">
+                <p>
+                    como foi o serviço ?
+                </p>
+            </label>
+
+            <p>
+                <select name="service" id="service" required>
+                    <option disabled > Escolha sua Opção </option>
+                    <option value="0.1">  10 </option>
+                    <option value="0.2"> 20 </option>
+                </select>
+            </p>
+
+
+            <label for="person">
+                <p>
+                    Quantas pessoas vão pagar a conta ?
+                </p>
+            </label>
+
+            <p>
+                <input type="number" name="person" id="person" required >
+            </p>
+
+            <button type="submit"> Calcular </button>
+
+        </form>
+
+
+        <div  id="total" > 
+            Total da Gorjeta R$: 
+            <span id="totalGorjeta"> 0 </span>
+            <p id="each" > cada </p> 
+        </div>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
